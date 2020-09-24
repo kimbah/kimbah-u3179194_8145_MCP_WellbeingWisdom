@@ -1,0 +1,686 @@
+     /* General CSS */
+     
+     html, body {
+        height: 100%;
+    }
+    
+    body {
+        font-family: "Roboto Condensed", sans-serif;
+    }
+    /*--- Nav Scrolling Offset --*/
+    
+    .offset:before {
+        height: 4rem;
+        margin-top: -4rem;
+        content: "";
+        display: block;
+    }
+    
+    .offset-faq::before {
+        height: 4rem;
+        margin-top: 0;
+        content: "";
+        display: block;
+    }
+    /*====================================================
+                      CONTENT (Generic)
+======================================================*/
+    
+    .content-box {
+        padding: 60px 0 60px 0;
+    }
+    
+    .content-title h3 {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+    
+    .content-title-white h3 {
+        color: #fff;
+    }
+    
+    .content-title-underline {
+        width: 30px;
+        height: 3px;
+        background-color: #34c6d3;
+        margin: 0 auto 30px auto;
+    }
+    /*====================================================
+                      NAVIGATION TOP
+======================================================*/
+    
+    .ww_nav_top {
+        background: rgba(0, 0, 0, 0.7) !important;
+        padding: 10px 85px;
+    }
+    
+    .navbar-nav>li>a {
+        color: #fff;
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+    
+    .navbar-nav>li>a:hover, .navbar-nav>li>a:focus, .navbar-nav>li>a:active {
+        background: none;
+        color: #34c6d3 !important;
+    }
+    
+    .ww-top-nav {
+        background: rgba(20, 19, 19, 0.9) !important;
+        padding: 0 85px;
+    }
+    
+    .ww-top-nav ul.navbar-nav>li.active>a {
+        color: #34c6d3;
+    }
+    /*============= TOP SCROLL =============*/
+    
+    .fa-angle-up {
+        font-size: 3rem !important;
+        height: 3rem;
+        color: #5f5953;
+        background: white;
+    }
+    
+    a.top-scroll {
+        right: 1.2rem;
+        bottom: 1.2rem;
+        position: fixed;
+        opacity: .3;
+        z-index: 1000;
+        display: none;
+    }
+    
+    a.top-scroll:hover {
+        opacity: .5;
+    }
+    /*====================================================
+                       BUTTONS (Generic)
+======================================================*/
+    
+    .btn-general {
+        border-width: 2px;
+        border-radius: 0;
+        padding: 12px 26px 12px 26px;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
+    .btn-white {
+        border-color: #fff !important;
+        color: #fff !important;
+    }
+    
+    .btn-white:hover, .btn-white:focus {
+        background-color: #fff;
+        color: #41464b !important;
+    }
+    
+    .btn-blue {
+        border-color: #34c6d3 !important;
+        color: #34c6d3 !important;
+    }
+    
+    .btn-blue:hover, .btn-blue:focus {
+        background-color: #34c6d3;
+        color: #fff;
+    }
+
+
+.button {
+   display: inline-block;
+   padding: .75rem 1.25rem;
+   border-radius: 10rem;
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 1rem;
+   letter-spacing: .15rem;
+   transition: all .3s;
+   position: relative;
+   overflow: hidden;
+   z-index: 1;
+}
+.button:after {
+       content: '';
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: #259563;
+       border-radius: 10rem;
+       z-index: -2;
+   }
+.button:before {
+       content: '';
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       width: 0%;
+       height: 100%;
+       background-color: #72D816;
+       transition: all .3s;
+       border-radius: 10rem;
+       z-index: -1;
+   }
+.button:hover {
+       color: #fff;
+   }
+.button:hover:before {
+           width: 100%;
+       
+   }
+
+    /*====================================================
+                   Jumbotron
+======================================================*/
+    
+    .jumbotron {
+        background-image: url('../img/aust_outback.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+        margin-bottom: 0;
+    }
+    /* section {
+        padding-top: 4rem;
+    }
+    
+    body {
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Rubik', sans-serif;
+    } */
+    /*====================================================
+                   About Us
+======================================================*/
+    
+    #about-header {
+        height: 200px;
+        background: url('../img/emma_gorge.jpeg');
+        /* background-position: 0 -360px; */
+        background-size: cover;
+        background-attachment: fixed;
+        color: #fff;
+        border-bottom: 1px #eee solid;
+        padding-top: 50px;
+    }
+    
+    .about-img {
+        margin-top: -50px;
+    }
+    /*====================================================
+                      SERVICES
+======================================================*/
+    /* #services {
+        background: url(/img/Kim\ gorges.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #FFF;
+    } */
+    /* #services::after {
+        content: "";
+        background: url(/img/Gib\ River\ Road.jpeg);
+        background-size: cover;
+        background-attachment: fixed;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    } */
+    /* .service-item {
+        padding: 20px 0 20px 0;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    
+    .service-item-icon i {
+        color: #34c6d3;
+        float: left;
+        padding: 15px;
+        margin-right: 25px;
+        width: 75px;
+        height: 75px;
+        text-align: center;
+    }
+    
+    .service-item:hover .service-item-icon i {
+        color: #fff;
+        background-color: #34c6d3;
+    }
+    
+    .service-item-title h3 {
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0 0 10px 0;
+    }
+    
+    .service-item-desc p {
+        margin: 0;
+        padding-left: 85px;
+    } */
+    /*====================================================
+                      TEAM
+======================================================*/
+    
+    #team {
+        position: relative;
+        color: #FFF;
+    }
+    
+    #team::after {
+        content: "";
+        background: url(../img/Kim\ gorges.jpeg);
+        background-size: cover;
+        background-attachment: fixed;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+    
+    .team-member {
+        margin: 0 15px;
+    }
+    
+    .team-member-info {
+        padding: 10px 0 30px 0;
+    }
+    
+    h4.team-member-name {
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        padding-top: 2px;
+    }
+    
+    h4.team-member-designation {
+        color: #34c6d3;
+        font-size: 15px;
+        font-weight: 700;
+        font-style: italic;
+        letter-spacing: 1px;
+        margin-top: 5px;
+    }
+    /*====================================================
+                      SOCIAL
+======================================================*/
+    
+    .social-list {
+        padding-left: 0;
+    }
+    
+    .social-list li {
+        list-style: none;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        margin-right: 6px;
+        margin-top: 10px;
+    }
+    
+    .social-icon i {
+        font-size: 17px;
+    }
+    
+    .icon-gray i {
+        color: #64707b !important;
+    }
+    
+    .icon-white i {
+        color: #fff;
+    }
+    
+    .social-icon i:hover {
+        color: #34c6d3;
+    }
+    /*====================================================
+                      TESTIMONIALS
+======================================================*/
+    
+    #testimonials-cover {
+        background-image: url("../img/bg-testimonials.jpg");
+    }
+    
+    #testimonials .content-box {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    #customers-testimonials {
+        padding: 50px 0;
+    }
+    
+    .testimonial img {
+        max-width: 120px;
+        margin: 0 auto 0 auto;
+    }
+    
+    .testimonial blockquote {
+        border: 0;
+        font-family: Georgia, sans-serif;
+        font-style: italic;
+        color: #fff;
+        padding: 6px 150px;
+        position: relative;
+    }
+    
+    .testimonial blockquote p {
+        color: #fff;
+    }
+    
+    .testimonial blockquote::before, .testimonial blockquote::after {
+        font-size: 80px;
+        font-style: normal;
+        line-height: 1;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+    }
+    
+    .testimonial blockquote::before {
+        content: "\201C";
+        top: 0;
+        left: 100px;
+    }
+    
+    .testimonial blockquote::after {
+        content: "\201D";
+        bottom: 0;
+        right: 100px;
+    }
+    
+    .testimonial-author p {
+        color: #fff;
+        font-size: 17px;
+    }
+    
+    .testimonial-author p strong {
+        display: block;
+    }
+    /*====================================================
+                  FAQ
+======================================================*/
+    
+    #faq {
+        margin-bottom: 3rem;
+    }
+    
+    #faq .card {
+        border: #444;
+    }
+    
+    #faq a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    #faq .card-body, #faq .card-header {
+        background: #333;
+    }
+    /* .offset-faq {
+        margin-bottom: 3rem;
+    } */
+    /*====================================================
+                      NEWSLETTER
+======================================================*/
+    
+    #newsletter {
+        background-color: #41464b !important;
+    }
+    /*====================================================
+                      FOOTER CONTACT
+======================================================*/
+    
+    footer {
+        background-color: #41464b;
+        padding-top: 30px;
+        border-top: 5px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    .contact-form {
+        color: #FFF;
+    }
+    
+    #contact-left h3, #contact-right h3 {
+        color: #fff;
+        font-size: 27px;
+        font-weight: 700;
+    }
+    
+    #contact-left p {
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    
+    #contact-info {
+        background-image: url("../img/world-map.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: #FFF;
+    }
+    /* #content > address {
+        color: white;
+    } */
+    
+    footer > address {
+        color: #fff;
+    }
+    
+    footer > address strong {
+        font-size: 16px;
+        color: #FFF;
+    }
+    
+    footer > address strong, #phone-fax-email strong {
+        letter-spacing: 1px;
+    }
+    
+    .find-us {
+        color: #FFF;
+        margin-top: 10px;
+    }
+    
+    span.input-group-addon > i {
+        margin-right: 5px;
+    }
+    
+    form .form-control {
+        background: transparent;
+        border-radius: 0;
+        border-color: #fff;
+        font-size: 17px;
+        font-weight: 300;
+        padding: 8px 16px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    
+    .embed-responsive {
+        height: 350px;
+    }
+    /*====================================================
+                      FOOTER
+======================================================*/
+    
+    #footer-bottom {
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 30px 0;
+        margin-top: 20px;
+    }
+    
+    #footer-copyrights p {
+        margin: 0;
+        color: #fff;
+    }
+    
+    #footer-menu {
+        float: left;
+        color: #fff;
+        font-size: 7px;
+        font-weight: 300;
+    }
+    
+    #footer-menu ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+    
+    #footer-menu ul li {
+        display: inline-block;
+    }
+    
+    #footer-menu a {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 300;
+        /* margin: 0 10px; */
+        text-decoration: none;
+    }
+    
+    #footer-menu a:hover {
+        color: #34c6d3;
+    }
+    /*====================================================
+                      FEATURES
+======================================================*/
+    
+    .feature-image > img {
+        border-radius: 50%;
+    }
+    
+    .features-inner-wrapper {
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+    
+    .left-feature-item {
+        position: relative;
+        padding-right: 90px;
+        margin-bottom: 65px;
+        text-align: right;
+        margin-top: 35px;
+    }
+    
+    .left-feature-item-icon {
+        position: absolute;
+        right: 0;
+        top: -8px;
+        font-size: 40px;
+        color: #129CF3;
+        width: 90px;
+        height: 90px;
+        text-align: center;
+    }
+    
+    .left-feature-item h3 {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 21px;
+        color: #333;
+    }
+    
+    .left-feature-item p {
+        color: #333;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 25px;
+    }
+    /* .feature-image {
+        background: url(/img/dark_rift.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100%;
+    } */
+    
+    .feature-image img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .right-feature-item {
+        position: relative;
+        padding-left: 90px;
+        margin-bottom: 65px;
+        margin-top: 35px;
+        text-align: left;
+    }
+    
+    .right-feature-item-icon {
+        position: absolute;
+        left: 0;
+        top: -8px;
+        font-size: 40px;
+        color: #129CF3;
+        width: 90px;
+        height: 90px;
+        text-align: center;
+    }
+    
+    .right-feature-item h3 {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 21px;
+        color: #333;
+    }
+    
+    .right-feature-item p {
+        color: #333;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 25px;
+    }
+    /* ========= Gloso GenericFeatures ============= */
+    /* ============= Generic CSS ============== */
+    
+    .section-title {
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+    
+    .section-title h2 {
+        position: relative;
+        text-align: center;
+        color: #007bff;
+        font-size: 30px;
+        font-weight: 700;
+        /* text-transform: uppercase; */
+    }
+    
+    .section-title h2:after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        width: 60px;
+        height: 1px;
+        background-color: #129CF3;
+        margin-left: -30px;
+    }
+    
+    .section-title p {
+        color: #333;
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 45px;
+    }
