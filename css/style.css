@@ -188,6 +188,10 @@
         min-height: 100vh;
         margin-bottom: 0;
     }
+
+    /* #banner-heart {
+        font-size: 5em !important;
+    } */
     /* section {
         padding-top: 4rem;
     }
@@ -547,7 +551,7 @@
     
     #footer-menu a {
         color: #fff;
-        font-size: 13px;
+        font-size: 13px !important;
         font-weight: 300;
         /* margin: 0 10px; */
         text-decoration: none;
