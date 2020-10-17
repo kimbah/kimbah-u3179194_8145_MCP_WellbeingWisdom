@@ -189,20 +189,6 @@
         margin-bottom: 0;
     }
 
-    /* #banner-heart {
-        font-size: 5em !important;
-    } */
-    /* section {
-        padding-top: 4rem;
-    }
-    
-    body {
-        font-family: 'Open Sans', sans-serif;
-    }
-    
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Rubik', sans-serif;
-    } */
     /*====================================================
                    About Us
 ======================================================*/
@@ -221,60 +207,7 @@
     .about-img {
         margin-top: -50px;
     }
-    /*====================================================
-                      SERVICES
-======================================================*/
-    /* #services {
-        background: url(/img/Kim\ gorges.jpeg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        color: #FFF;
-    } */
-    /* #services::after {
-        content: "";
-        background: url(/img/Gib\ River\ Road.jpeg);
-        background-size: cover;
-        background-attachment: fixed;
-        opacity: 1;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1;
-    } */
-    /* .service-item {
-        padding: 20px 0 20px 0;
-        margin-bottom: 20px;
-        cursor: pointer;
-    }
-    
-    .service-item-icon i {
-        color: #34c6d3;
-        float: left;
-        padding: 15px;
-        margin-right: 25px;
-        width: 75px;
-        height: 75px;
-        text-align: center;
-    }
-    
-    .service-item:hover .service-item-icon i {
-        color: #fff;
-        background-color: #34c6d3;
-    }
-    
-    .service-item-title h3 {
-        font-size: 20px;
-        font-weight: 400;
-        margin: 0 0 10px 0;
-    }
-    
-    .service-item-desc p {
-        margin: 0;
-        padding-left: 85px;
-    } */
+
     /*====================================================
                       TEAM
 ======================================================*/
